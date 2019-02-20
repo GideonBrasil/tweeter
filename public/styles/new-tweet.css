@@ -1,8 +1,8 @@
 section.new-tweet {
-    background-color: #eee;
-    border-radius: 10px;
-    border: 1px solid #0c0b0b;
-    padding: 1em;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #0c0b0b;
+  padding: 1em;
 }
 
 .new-tweet h2 {
@@ -19,11 +19,11 @@ section.new-tweet {
 .new-tweet form span {
   float: right;
 }
-#tweet:hover {
+.tweet:hover {
   opacity: 1;
 }
 
-article#tweet {
+article.tweet {
   opacity: .7;
   margin: 15px auto;  
   background-color: #ffffff;
@@ -31,29 +31,28 @@ article#tweet {
   border: 1px solid #0c0b0b;
 }
 
-article#tweet header {
+article.tweet header {
   background-color: hsl(0, 0%, 93%);
   padding: 10px;
   border-radius: 10px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   display: flex;
-  ;
 }
 
-article#tweet header h2 {
+article.tweet header h2 {
   margin: 0;
   padding: 10px;
 }
 
-article#tweet header span {
+article.tweet header span {
   margin: 0;
   padding: 10px;
   position: relative;
   left: 205px;
 }
 
-article#tweet footer {
+article.tweet footer {
   text-align: left;
   border-top: .5px solid lightgray;
 }
@@ -66,6 +65,6 @@ section p {
 
 footer p {
   margin: 0;
-  padding: 10px;
+  padding: 8px;
   font-size: 80%;
 }
