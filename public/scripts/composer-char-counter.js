@@ -1,12 +1,6 @@
-// $(document).ready(function() {
-//     const textHandler = $('.new-tweet');
-//     textHandler.on('keypress', (event) => {
-//       console.log('This is the key pressed', event.key);
-//     });
-// });
-
 $(document).ready(function() {
-  $('.new-tweet').on('keypress', function() {
-    console.log(this);
+  $('.new-tweet').on('keypress', 'textarea', function() {
+    textLength = 140 - (this.textLength);
+    console.log(textLength);
   });
 });
