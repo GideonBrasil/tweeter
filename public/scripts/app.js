@@ -21,25 +21,27 @@ const tweetData = {
   }
   
   function createTweetElement(tweetData) {
-      return $("tweet").addClass("tweet-header").append(('avatar'));
-//   return `
-//     <article class="tweet">
-//     <header class="tweet-header">
-//     <img class="avatar" src="${tweetData.user.avatars.small}" />
-//     <h2>${tweetData.user.name}</h2>
-//     <span>@${tweetData.user.handle}</span>
-//     </header>
-//     <section class="tweet-section">
-//       <p>${tweetData.user.content}</p>
-//     </section>
-//     <footer class="tweet-footer">
-//       <p>${tweetData.user.created_at}</p>
-//     </footer>
-//   </article>`
+  return `
+    <article class="tweet">
+    <header class="tweet-header">
+    <img class="avatar" src="${tweetData.user.avatars.small}" />
+    <h2>${tweetData.user.name}</h2>
+    <span>@${tweetData.user.handle}</span>
+    </header>
+    <section class="tweet-section">
+      <p>${tweetData.content.text}</p>
+    </section>
+    <footer class="tweet-footer">
+      <p>${tweetData.created_at}</p>
+    </footer>
+  </article>`
   }
 
   var $tweet = createTweetElement(tweetData);
 
   // Test / driver code (temporary)
   console.log($tweet); // to see what it looks like
-  $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
