@@ -49,7 +49,11 @@ article.tweet header span {
   margin: 0;
   padding: 10px;
   position: relative;
-  left: 205px;
+  left: 174px;
+}
+
+article.tweet .avatar {
+  border-radius: .6em;
 }
 
 article.tweet footer {
