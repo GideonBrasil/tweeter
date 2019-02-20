@@ -19,3 +19,11 @@ section.new-tweet {
 .new-tweet form span {
   float: right;
 }
+
+section#tweets {
+  margin-top: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #0c0b0b;
+  padding: 1em;
+}
