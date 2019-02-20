@@ -27,27 +27,32 @@
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
+      <span class="header">HerTwat</span>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
         <section class="new-tweet">
-            <h2>Compose Tweet</h2>
+            <h2>Compose Twat</h2>
             <form method="POST" action="/tweets/">
-              <textarea id="newTweetTextArea" name="text" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
+              <textarea id="newTweetTextArea" name="text" placeholder="I know what you're thinking about today..."></textarea>
+              <input type="submit" value="Twat">
               <span class="counter">140</span>
             </form>
           </section>
-          <section id="tweets">
-            <h2>Compose Tweet</h2>
-            <form method="POST" action="/tweets/">
-              <textarea id="newTweetTextArea" name="text" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
-              <span class="counter">140</span>
-            </form>
-          </section>
+          <article class="container">
+            <header class="tweet-header">
+              <a img></a>
+              <h2>Name</h2>
+              <span>@name</span>
+            </header>
+            <section class="tweet-section">
+              <p>Little Tweet here</p>
+            </section>
+            <footer class="tweet-footer">
+              <p>10 days ago </p>
+            </footer>
+          </article>
     </main>
 
   </body>

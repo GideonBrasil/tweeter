@@ -20,8 +20,8 @@ section.new-tweet {
   float: right;
 }
 
-section#tweets {
-  margin-top: 20px;
+article.container {
+  margin: 15px auto;  
   background-color: #eee;
   border-radius: 10px;
   border: 1px solid #0c0b0b;

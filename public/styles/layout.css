@@ -27,7 +27,6 @@ body {
 
  main.container {
    width: 450px;
-   /* height: -webkit-fill-available; */
    padding: 140px 2em;
    background-color: #ffffff;
    margin: auto;
