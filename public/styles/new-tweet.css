@@ -38,6 +38,7 @@ article.tweet header {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   display: flex;
+  position: relative;
 }
 
 article.tweet header h2 {
@@ -48,8 +49,8 @@ article.tweet header h2 {
 article.tweet header span {
   margin: 0;
   padding: 10px;
-  position: relative;
-  left: 174px;
+  position: absolute;
+  right: 4px;
 }
 
 article.tweet .avatar {
