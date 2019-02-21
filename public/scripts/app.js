@@ -85,9 +85,16 @@ function renderTweets(newData) {
 $( "#submit" ).submit(function(event) {
   event.preventDefault();
     var newTweet = $(this).serialize();
-    $.post('/tweets/', newTweet, function (data) {
-      $('#tweet-container').prepend(createTweetElement(data));
-    });
+    if ($('textarea').val() === "" || $('textarea').val() === null) {
+      alert('You didn\'t fill out your tweet.');
+    } 
+    else if ($('.counter').text() < 0) {
+      alert('Only 140 character tweets are allowed. Keep your tweets short and to the point');
+    } else {
+      $.post('/tweets/', newTweet, function (data) {
+        $('#tweet-container').prepend(createTweetElement(data));
+      });
+    }
 });
 
 function loadTweets() {
