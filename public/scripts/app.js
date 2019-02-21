@@ -93,6 +93,9 @@ $( "#submit" ).submit(function(event) {
     } else {
       $.post('/tweets/', newTweet, function (data) {
         $('#tweet-container').prepend(createTweetElement(data));
+        $('textarea').val('');
+        $('.counter').text(140);
+        
       });
     }
 });
