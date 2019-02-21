@@ -58,19 +58,25 @@
 // make js in the DOM only load once the client is ready
 $(() => {
 
+  function escape(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
 function createTweetElement(data) {
 	return `
 		<article class="tweet">
 			<header class="tweet-header">
 				<img class="avatar" src="${data.user.avatars.small}" />
-				<h2>${data.user.name}</h2>
-				<span>@${data.user.handle}</span>
+				<h2>${(data.user.name)}</h2>
+				<span>@${escape(data.user.handle)}</span>
 			</header>
 			<section class="tweet-section">
-				<p>${data.content.text}</p>
+				<p>${escape(data.content.text)}</p>
 			</section>
 			<footer class="tweet-footer">
-				<p>${data.created_at}</p>
+				<p>${escape(data.created_at)}</p>
 			</footer>
 		</article>`
 }
