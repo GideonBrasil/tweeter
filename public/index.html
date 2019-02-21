@@ -16,7 +16,7 @@
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    
+
   </head>
 
   <body>
@@ -31,15 +31,16 @@
     <main class="container">
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
-            <form method="POST" action="/tweets/">
+            <form method="POST" action="/tweets/" id="submit">
               <textarea id="newTweetTextArea" name="text" placeholder="I know what you're thinking about today..."></textarea>
               <input type="submit" value="Tweet">
               <span class="counter">140</span>
             </form>
           </section>
-          <article class="tweet">
+          <!-- <article class="tweet">
             <header class="tweet-header">
-              <img class="avatar" src="https://vanillicon.com/v2/51c2445fbaa7bda126b47304725a63ae.svg" />
+              <img class="avatar" src="https://vanillicon.com/v2/51c2445fbaa7bda126b47304725a63ae.svg
+              " />
               <h2>Name</h2>
               <span>@name</span>
             </header>
@@ -49,16 +50,15 @@
             <footer class="tweet-footer">
               <p>10 days ago </p>
             </footer>
-          </article>
+          </article> -->
 
-          <div id="tweet-container">
+          <section id="tweet-container">
 
-          </div>
+          </section>
     </main>
-
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
+    
+      <!-- App JS -->
+      <script type="text/javascript" src="/scripts/app.js"></script>
+      <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
 </html>
