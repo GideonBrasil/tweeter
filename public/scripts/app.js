@@ -55,7 +55,6 @@ const data = [
 // creates tweet element 
 // pass in rendered tweet into template
 function createTweetElement(data) {
-	console.log("data; ", data);
 	return `
 		<article class="tweet">
 			<header class="tweet-header">
@@ -75,15 +74,8 @@ function createTweetElement(data) {
 // pass each tweet from array as object
 function renderTweets(tweet) {
 	for (let tweet of data) {
-	console.log('tweet:', tweet)
-	let newTweet = createTweetElement(tweet); 
+		$('#tweet-container').append(createTweetElement(tweet)); 
 	}
-	return $('#tweet-container').append(newTweet);
 }
 
-// var $tweet = createTweetElement(data);
 renderTweets(data);
-
-// Test / driver code (temporary)
-// console.log($tweet); // to see what it looks like
-// $('#tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
