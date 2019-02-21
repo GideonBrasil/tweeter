@@ -55,6 +55,7 @@
 // creates tweet element 
 // pass in rendered tweet into template
 
+// make js in the DOM only load once the client is ready
 $(() => {
 
 function createTweetElement(data) {
@@ -88,5 +89,13 @@ $( "#submit" ).submit(function(event) {
       $('#tweet-container').prepend(createTweetElement(data));
     });
 });
+
+function loadTweets() {
+  $.get('/tweets/').then(function (newData) {
+    renderTweets(newData);
+  })
+}
+
+loadTweets();
 
 });
