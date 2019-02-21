@@ -1,3 +1,4 @@
+$(() => { 
 $(document).ready(function() {
   $('.new-tweet').on('keydown', 'textarea', function() {
     let textLength = 140 - (this.textLength);
@@ -10,4 +11,5 @@ $(document).ready(function() {
       $(this).siblings('.counter').css('color', 'black');
     }
   });
+});
 });

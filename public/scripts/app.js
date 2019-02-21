@@ -54,6 +54,9 @@
 
 // creates tweet element 
 // pass in rendered tweet into template
+
+$(() => {
+
 function createTweetElement(data) {
 	return `
 		<article class="tweet">
@@ -72,16 +75,18 @@ function createTweetElement(data) {
 }
 
 // pass each tweet from array as object
-function renderTweets() {
-	for (let tweet of data) {
+function renderTweets(newData) {
+	for (let tweet of newData) {
 		$('#tweet-container').prepend(createTweetElement(tweet));
 	}
 }
 
-$( "#submit" ).submit(function( event ) {
+$( "#submit" ).submit(function(event) {
   event.preventDefault();
     var newTweet = $(this).serialize();
     $.post('/tweets/', newTweet, function (data) {
       $('#tweet-container').prepend(createTweetElement(data));
     });
+});
+
 });
