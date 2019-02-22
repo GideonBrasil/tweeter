@@ -66,10 +66,51 @@ section p {
   margin: 0;
   padding: 20px;
   font-size: 120%;
+  word-break: break-word;
 }
 
 footer p {
   margin: 0;
   padding: 8px;
   font-size: 80%;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.button {
+float: right; 
+background: hsl(0, 0%, 86%);
+border-radius: 10px;
+border: 2px solid hsl(0, 7%, 6%);
+border-width: 2px 2px 2px 2px;
+padding: 15px 10px 15px 5px;
+margin-top: 6px;
+color: hsl(125, 57%, 33%);
+font-size: 23px;
+font-weight: 500;
+}
+.button > div {
+  color: #999;
+font-size: 10px;
+font-family: Helvetica Neue;
+font-weight: initial;
+font-style: normal;
+text-align: center;
+margin: 0px 0px 0px 0px
+}
+.button > i {
+  font-size: 1em;
+border-radius: 0px;
+border: 5px solid transparent;
+border-width: opx 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+position: relative;
+}
+.button > .ld {
+  font-size: initial
 }
