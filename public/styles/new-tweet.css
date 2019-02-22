@@ -3,6 +3,7 @@ section.new-tweet {
   border-radius: 10px;
   border: 1px solid #0c0b0b;
   padding: 1em;
+  z-index: 500 !important;
 }
 
 .new-tweet h2 {
@@ -11,12 +12,16 @@ section.new-tweet {
   border-bottom: solid black 2px;
 }
 
-.new-tweet p.error {
+.new-tweet div.error {
+  background-color: lightcoral;
   font-weight: bold;
   font-size: 93%;
   color: red;
-  padding: 0px 0px 10px 0px;
+  display: none;
+  margin-bottom: 5px;
+  padding: 4px 0px 4px 0px;
   text-align: center;
+  border: 2px solid red;
 }
 
 .new-tweet textarea {

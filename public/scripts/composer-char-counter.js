@@ -11,7 +11,7 @@ $(document).ready(function() {
       $(this).siblings('.counter').css('color', 'black');
     }
     if ((textLength) >= 0) {
-      $('.error').text('');
+      $('.error').text('').hide() ;
     }
   });
 });
