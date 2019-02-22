@@ -62,4 +62,9 @@ function loadTweets() {
 
 loadTweets();
 
+$('.button').click(function () {
+  $('.new-tweet').toggle('fast');
+  $('#newTweetTextArea').focus();
+});
+ 
 });
