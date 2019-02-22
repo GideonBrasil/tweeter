@@ -63,7 +63,7 @@ function loadTweets() {
 loadTweets();
 
 $('.button').click(function () {
-  $('.new-tweet').toggle('fast');
+  $('.new-tweet').slideToggle('fast');
   $('#newTweetTextArea').focus();
 });
  

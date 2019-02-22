@@ -1,6 +1,6 @@
 $(() => { 
 $(document).ready(function() {
-  $('.new-tweet').on('keydown', 'textarea', function() {
+  $('.new-tweet').on('keyup', 'textarea', function() {
     let textLength = 140 - (this.textLength);
     // $(this).siblings('.counter').text(textLength);
     $(this).parent().children('.counter').text(textLength);
