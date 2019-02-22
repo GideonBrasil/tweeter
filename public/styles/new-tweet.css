@@ -11,6 +11,14 @@ section.new-tweet {
   border-bottom: solid black 2px;
 }
 
+.new-tweet p.error {
+  font-weight: bold;
+  font-size: 93%;
+  color: red;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+
 .new-tweet textarea {
   width: -webkit-fill-available;
   padding: 0.6em;

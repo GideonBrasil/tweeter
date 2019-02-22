@@ -10,6 +10,9 @@ $(document).ready(function() {
     else {
       $(this).siblings('.counter').css('color', 'black');
     }
+    if ((textLength) >= 0) {
+      $('.error').text('');
+    }
   });
 });
 });

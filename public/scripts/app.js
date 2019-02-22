@@ -41,10 +41,9 @@ $( "#submit" ).submit(function(event) {
   event.preventDefault();
     var newTweet = $(this).serialize();
     if ($('textarea').val() === "" || $('textarea').val() === null) {
-      alert('You didn\'t fill out your tweet.');
-    } 
-    else if ($('.counter').text() < 0) {
-      alert('Only 140 character tweets are allowed. Keep your tweets short and to the point');
+      $('.error').text('You didn\'t fill out your tweet.');
+    } else if ($('.counter').text() < 0) {
+      $('.error').text('Only 140 character tweets are allowed. Keep your tweets short and to the point');
     } else {
       $.post('/tweets/', newTweet, function (data) {
         $('#tweet-container').prepend(createTweetElement(data));
