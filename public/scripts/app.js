@@ -25,7 +25,7 @@ function createTweetElement(data) {
 				<p>${escape(data.content.text)}</p>
 			</section>
 			<footer class="tweet-footer">
-				<p>${escape(data.created_at)}</p>
+        <p>${new Date(data.created_at).toLocaleString()}<i class="fas fa-heart"></i><i class="fas fa-retweet"></i><i class="fas fa-flag"></i></p>
 			</footer>
 		</article>`
 }
