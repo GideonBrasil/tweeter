@@ -4,6 +4,23 @@ A single page Ajax-based Twitter clone that uses Express, jquery, javascript, HT
 
 ## Final Project
 
+![main_page](https://github.com/GideonBrasil/tweeter/blob/master/docs/main_page.png?raw=true)
+
+[You can compose Tweets and see previous Tweets.](https://github.com/GideonBrasil/tweeter/blob/master/docs/main_page.png?raw=true)
+
+***
+
+![newTweet_highlight](https://github.com/GideonBrasil/tweeter/blob/master/docs/newTweet-highlight.png?raw=true)
+
+[Posted Tweets will highlight when you pass the mouse over them.](https://github.com/GideonBrasil/tweeter/blob/master/docs/newTweet-highlight.png?raw=true)
+
+***
+
+![newTweet_form](https://github.com/GideonBrasil/tweeter/blob/master/docs/newTweet_form.png?raw=true)
+
+[Compose new Tweets and share them with your friends.](https://github.com/GideonBrasil/tweeter/blob/master/docs/newTweet_form.png?raw=true)
+
+***
 
 ## Getting Started
 
